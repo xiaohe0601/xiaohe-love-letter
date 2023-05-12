@@ -1,0 +1,70 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: MiSans, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC", "miui", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  background-color: #ff5555;
+  overflow: hidden;
+}
+
+.souvenir-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  background-color: #ff5555;
+  z-index: 100;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height ease-out 0.3s;
+}
+
+.souvenir-mask.show {
+  height: 100%;
+}
+
+.souvenir-mask__tips {
+  color: #ffffff;
+  font-size: 38px;
+}
+
+.souvenir-times {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  user-select: none;
+}
+
+.souvenir-time-item {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.souvenir-time-item + .souvenir-time-item {
+  margin-top: 20px;
+}
+
+.souvenir-time-item__body {
+  margin-top: 10px;
+}
+
+.souvenir-time-item__title__link, .souvenir-time-item__moment__digit {
+  margin: 0 6px;
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.souvenir-music-player {
+  display: none;
+}
