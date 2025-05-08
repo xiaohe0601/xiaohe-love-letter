@@ -1,0 +1,9 @@
+{
+  "extends": "@xiaohe01/tsconfig/tsconfig.lib.json",
+  "include": [
+    "uno.config.ts",
+    "vite.config.ts",
+    "eslint.config.js",
+    "stylelint.config.js"
+  ]
+}

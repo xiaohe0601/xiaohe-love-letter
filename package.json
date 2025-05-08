@@ -1,0 +1,59 @@
+{
+  "name": "xiaohe-love-letter",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.10.0",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --cache",
+    "lint:fix": "nr lint --fix",
+    "lint:type": "vue-tsc --noEmit",
+    "stylelint": "stylelint **/*.{css,scss,html,vue} --cache",
+    "stylelint:fix": "nr stylelint --fix"
+  },
+  "dependencies": {
+    "@vueuse/core": "catalog:",
+    "await-to-js": "catalog:",
+    "dayjs": "catalog:",
+    "lodash-es": "catalog:",
+    "ress": "catalog:",
+    "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@antfu/ni": "catalog:",
+    "@iconify-json/carbon": "catalog:",
+    "@types/lodash-es": "catalog:",
+    "@types/node": "catalog:",
+    "@unocss/preset-legacy-compat": "catalog:",
+    "@vitejs/plugin-vue": "catalog:",
+    "@vue/runtime-core": "catalog:",
+    "@xiaohe01/eslint-config": "catalog:",
+    "@xiaohe01/stylelint-config": "catalog:",
+    "@xiaohe01/tsconfig": "catalog:",
+    "eslint": "catalog:",
+    "esno": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "stylelint": "catalog:",
+    "terser": "catalog:",
+    "typescript": "catalog:",
+    "unocss": "catalog:",
+    "unplugin-auto-import": "catalog:",
+    "unplugin-vue-components": "catalog:",
+    "vite": "catalog:",
+    "vue-tsc": "catalog:"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --fix",
+    "*.{css,scss,html,vue}": "stylelint --fix"
+  }
+}
