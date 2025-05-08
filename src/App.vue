@@ -40,7 +40,6 @@
 
 <script lang="ts" setup>
 import dayjs from "dayjs";
-import { TOGETHER_TIME } from "@/config";
 
 const playerEl = useTemplateRef("player");
 
@@ -49,7 +48,8 @@ const now = useNow({
 });
 
 const souvenir = computed(() => {
-  const diff = dayjs(now.value.valueOf()).diff(dayjs(TOGETHER_TIME, "YYYY-MM-DD HH:mm:ss"), "second");
+  const diff = dayjs(now.value.valueOf())
+    .diff(dayjs(import.meta.env.VITE_TOGETHER_TIME, "YYYY-MM-DD HH:mm:ss"), "second");
 
   const days = Math.floor(diff / (60 * 60 * 24));
   const hours = Math.floor((diff - days * 60 * 60 * 24) / (60 * 60));
