@@ -1,5 +1,3 @@
-// noinspection JSUnresolvedVariable,JSPotentiallyInvalidUsageOfThis,DuplicatedCode,JSUnusedGlobalSymbols,JSUnresolvedFunction,SpellCheckingInspection
-
 (function () {
   const _face = new THREE.Triangle();
   const _color = new THREE.Vector3();
