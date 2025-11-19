@@ -10,7 +10,8 @@
         <a
           class="moment-value is-link"
           href="https://github.com/xiaohe0601"
-          target="_blank">小何</a>
+          target="_blank"
+        >小何</a>
         和
         <span class="moment-value">小周</span>
         在一起的
@@ -34,7 +35,8 @@
       class="hidden"
       src="/assets/music/background.mp3"
       preload="auto"
-      :loop="true"></audio>
+      :loop="true"
+    ></audio>
   </AppPage>
 </template>
 
