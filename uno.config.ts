@@ -1,9 +1,15 @@
 import { presetLegacyCompat } from "@unocss/preset-legacy-compat";
-import { defineConfig, presetAttributify, presetIcons, presetMini, transformerVariantGroup } from "unocss";
+import {
+  defineConfig,
+  presetAttributify,
+  presetIcons,
+  presetWind3,
+  transformerVariantGroup
+} from "unocss";
 
 export default defineConfig({
   presets: [
-    presetMini(),
+    presetWind3(),
     presetAttributify({
       prefixedOnly: true
     }),
